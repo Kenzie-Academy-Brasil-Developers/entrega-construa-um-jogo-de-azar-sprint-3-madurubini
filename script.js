@@ -1,5 +1,5 @@
-/*Função que sorteia 1 número aleatório de 1-9*/
-const sorteador = ()  => Math.floor(Math.random() * 3 + 1 );
+/*Função que sorteia 1 número aleatório de 1-4*/
+const sorteador = ()  => Math.floor(Math.random() * 5 + 1 );
 
 /*Função que simula uma rodada*/
 function oneTurn(){
@@ -12,18 +12,26 @@ function oneTurn(){
 
 /*Função que compara o resultado*/
 function analyser(resultado){
-    let condicoesDeVitoria = ['111','222','333','444','555','666','777','888','999']
+    let condicoesDeVitoria = ['111','222','333','444','555']
+    let vitoria = false;
 
     for(let condicao = 0; condicao< condicoesDeVitoria.length; condicao++){
-        if(resultado === condicoesDeVitoria[condicao]){
-            console.log('Você ganhou')
-        } 
-        else{
-            console.log('Você perdeu')
-        }
-               
+        if(condicoesDeVitoria[condicao] === resultado ){
+            vitoria = true;
+            console.log('Você GANHOUUUUU ' + resultado)
+        }               
     } 
+
+    if(!vitoria){
+        console.log('Você perdeu ' +resultado)
+    }
+    
     return resultado
 }
 
 analyser(oneTurn());
+
+const buttonJogar = document.getElementById('jogar');
+buttonJogar.addEventListener('click', function(){
+    analyser(oneTurn());
+})
