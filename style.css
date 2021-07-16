@@ -14,3 +14,13 @@
 .start {
     background-color: rosybrown;
 }
+
+.box {
+    border: 1px solid greenyellow;
+    width: 150px;
+    height: 100px;
+}
+
+.hidden{
+    display: none;
+}
