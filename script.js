@@ -25,9 +25,11 @@ function analyser(resultado){
             console.log(resultado) 
             const mostrarResultado = document.getElementById("resultado");
             let texto = document.createElement("p")
-            texto.textContent = ('Você ganhou ')
+            texto.classList.add("winner")
+            texto.textContent = ('Você GANHOUUU!! ')
             mostrarResultado.appendChild(texto)
-              
+            alert("VOCÊ GANHOU!$!$!$!$, clique ok para ver o resultado :)")
+                      
         }               
     } 
 
@@ -38,6 +40,7 @@ function analyser(resultado){
             texto.classList.add("resposta")
             texto.textContent = ('Você perdeu ')
             mostrarResultado.appendChild(texto) 
+           
            
            
     }
@@ -71,9 +74,8 @@ buttonJogar.addEventListener('click', function(){
     result();    
 })
 
-const buttonReset = document.getElementById('reset');
+const buttonReset = document.getElementById('limpar');
 buttonReset.addEventListener('click', function(){
-    
     esconder();
 })
 

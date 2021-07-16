@@ -1,26 +1,159 @@
-.container{
-    border:  1px solid black;
+body{
     width: 95vw;
+    background-color: #2D3E51;
+    color: #f3e8ce;
+    margin: 0 auto;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.container{
+    border-left: 1px dotted #f3e8ce;
+    border-right:  1px dotted #f3e8ce;
+    text-align: center;   
+    padding: 5px;
+    min-height: 500px;
     
 }
 
 .slotMachine {
-    border: 1px solid rebeccapurple;
-    width: 70%;
-    height: 300px;
+    width: 90%;
     margin: 0 auto;
+    line-height: 1.2;
 }
+
+
+ h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 5px;
+}
+
+img{
+    max-width: 200px;
+    max-height: 150px;
+    margin: 5px;
+}
+
+h3{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100px;
+}
+
 
 .start {
-    background-color: rosybrown;
+    background-color:#d05c39;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #f3e8ce;
+    color: #f3e8ce;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 5px;
+    
 }
 
-.box {
-    border: 1px solid greenyellow;
-    width: 150px;
-    height: 100px;
+.start:hover{
+    background-color: #cc4c25;
+    font-weight: bold;
 }
 
-.hidden{
-    display: none;
+.reset{
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2D3E51;
+    border: 1px solid #f3e8ce;
+    color: #f3e8ce;
 }
+
+.reset:hover{
+    background-color: #445d7a;
+    font-weight: bold;
+
+}
+
+.box-resultados {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 5px;
+    
+    
+}
+
+.box-resultados p {
+    border-bottom: 0.2px dotted #f3e8ce;
+    width: 40%;
+    
+}
+
+ 
+
+ .hidden {
+     display: none;
+ }
+
+ @media (min-width: 768px){
+     
+    body{
+        background-color:#805d8f;
+        color: #cefffd;
+        font-size: 20px;
+    }
+
+    .start {
+        background-color:#2d3e51;
+        border: 1px solid #cefffd;
+        color: #cefffd;
+        font-size: 30px;
+        margin: 10px;
+       
+        
+    }
+    h1 {
+        font-size: 50px;
+    }
+    
+    .start:hover{
+        background-color: #c69dbb;
+        font-weight: bold;
+    }
+
+    .reset{
+        background-color: #805d8f;
+        border: 1px solid #cefffd;
+        color: #cefffd;
+        font-size: 20px
+        ;
+    }
+
+    .reset:hover{
+        background-color: #c69dbb;
+        font-weight: bold;
+    
+    }
+
+    img{
+        max-width: 300px;
+        max-height: 250px;
+        margin: 5px;
+    }
+
+ }
+     
+ 

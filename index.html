@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Slot Machine</title>
 </head>
 <body>
     <div class="container">
         <h1>$l0t M4ch1n3</h1>
+        <img src="https://i.gifer.com/8FRH.gif" alt="slot-machine-gif">
         <div class="slotMachine">
-            <h3>Tente a sua Sorte!</h3>
-            <p>Você ganhará caso os 3 números sejam iguais!</p>
-            <div class="box" id="resultado">
-
+                <h3>Tente a sua Sorte!</h3>
+                <p>O algorítimo irá rodar uma combinação de números aleatória de 1 a 5,alinhando os 3 em uma linha, caso os tres valores da linha sejam identicos você ganhará o JACKPOT!</p>
+                <div class="botoes">
+                    <button class="start" id="jogar">Jogar</button>              
+                    <div class="box-resultados" id="resultado"></div>
+                    <button class="reset" id="limpar"> Reset</button>
             </div>
-            <button class="start" id="jogar">Jogar</button>
-            <button id="reset"> Reset</button>
-
         </div>
+        <img src="https://cdn.dribbble.com/users/396778/screenshots/2051962/emojiquiz-win-slot-machine-complete.gif" alt="slot-machine-winner" 
+        class="hidden gif-vitoria">
     </div>
     <script src="script.js"></script>
 </body>
