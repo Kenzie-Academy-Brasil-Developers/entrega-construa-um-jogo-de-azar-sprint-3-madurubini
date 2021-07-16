@@ -1,0 +1,16 @@
+.container{
+    border:  1px solid black;
+    width: 95vw;
+    
+}
+
+.slotMachine {
+    border: 1px solid rebeccapurple;
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.start {
+    background-color: rosybrown;
+}
